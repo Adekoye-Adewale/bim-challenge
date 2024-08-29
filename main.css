@@ -1,0 +1,88 @@
+:root{
+    --bg: #fff9f1;
+    --bg-100: #e5e0d8;
+    --bg-200: #ccc7c0;
+    --bg-300: #b2aea8;
+    --bg-400: #999590;
+    --bg-500: #7f7c78;
+    --bg-600: #666360;
+    --bg-700: #4c4a48;
+    --bg-800: #333130;
+    --bg-900: #191818;
+    --pri-color: #2e4dff;
+    --pri-color-100: #425eff;
+    --pri-color-200: #5770ff;
+    --pri-color-300: #6c82ff;
+    --pri-color-400: #8194ff;
+    --pri-color-500: #96a6ff;
+    --pri-color-600: #abb7ff;
+    --pri-color-700: #c0c9ff;
+    --pri-color-800: #d5dbff;
+    --pri-color-900: #eaedff;
+}
+*{
+    min-width: 0;
+    box-sizing: border-box
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+    line-height: 150%;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    padding: 0px;
+    margin: 0;
+}
+.header_sec{
+    background-color: var(--pri-color);
+    padding: 40px 20px;
+}
+.body_sec{
+    padding: 20px;
+}
+.week{
+    margin-bottom: 20px;
+}
+.task_card{
+    border-left: solid 5px var(--pri-color);
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.twin_btn{
+    display: flex;
+    gap: 5px;
+    background-color: var(--bg-300);
+    padding: 5px;
+    border-radius: 100px;
+}
+.twin_btn button{
+    all: unset;
+    border: solid 2px;
+    padding: 8px 22px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 450ms ease-in-out;
+}
+.twin_btn button:first-child{
+    background-color: var(--pri-color-900);
+    border-color: var(--pri-color-900);
+    border-radius: 50px 10px 10px 50px;
+}
+.twin_btn button:first-child:hover{
+    background-color: var(--bg-100);
+    border-radius: 50px 10px 10px 50px;
+}
+.twin_btn button:last-child{
+    border-color: var(--pri-color-300);
+    background-color: var(--pri-color-300);
+    border-radius: 10px 50px 50px 10px;
+}
+.twin_btn button:last-child:hover{
+    background-color: var(--pri-color-700);
+    border-radius: 10px 50px 50px 10px;
+}
