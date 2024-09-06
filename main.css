@@ -28,9 +28,12 @@ h1, h2, h3, h4, h5{
     margin: 0;
     line-height: 150%;
 }
+p, span{
+    margin: 0;
+}
 
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--bg);
     padding: 0px;
     margin: 0;
@@ -85,4 +88,45 @@ body{
 .twin_btn button:last-child:hover{
     background-color: var(--pri-color-700);
     border-radius: 10px 50px 50px 10px;
+}
+
+.sec_card_87huu87{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--pri-color-500);
+    border-radius: 30px;
+}
+.img_wrap_87huu87{
+    overflow: hidden;
+    border-radius: 20px;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.list_87huu87_wrap{
+    display: grid;
+}
+.list_87huu87{
+    display: grid;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px;
+    transition: all 350ms ease-in-out;
+    & span {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    & p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        opacity: 0.6;
+    }
+}
+.list_87huu87:hover{
+    background-color: var(--pri-color-800);
 }
