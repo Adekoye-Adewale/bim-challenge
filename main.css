@@ -130,3 +130,33 @@ body{
 .list_87huu87:hover{
     background-color: var(--pri-color-800);
 }
+
+.container_wrap_398nc9{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #6696df4f;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.list_wrap_398nc9{
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+}
+.sub_list_wrap_398nc9{
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--pri-color-500);
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
