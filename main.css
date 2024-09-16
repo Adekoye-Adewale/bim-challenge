@@ -131,6 +131,9 @@ body{
     background-color: var(--pri-color-800);
 }
 
+div.body_sec:nth-child(4) {
+    min-height: 350px;
+}
 .container_wrap_398nc9{
     display: flex;
     gap: 10px;
@@ -144,19 +147,24 @@ body{
     backdrop-filter: blur(5px);
 }
 .list_wrap_398nc9{
+    display: flex;
     position: relative;
     flex: 1;
     cursor: pointer;
 }
 .sub_list_wrap_398nc9{
+    display: none;
     position: absolute;
-    top: calc(100% + 20px);
-    left: 50%;
-    transform: translateX(-50%);
+    top: calc(100%);
+    left: 0;
+    transform: translateX(-20%);
     background-color: var(--pri-color-500);
     border-radius: 10px;
     padding: 20px 10px;
-    display: grid;
+    /* display: grid; */
     gap: 10px;
     width: 100%;
+}
+.list_wrap_398nc9:hover .sub_list_wrap_398nc9{
+    display: grid;
 }
