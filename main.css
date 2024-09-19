@@ -170,3 +170,14 @@ div.body_sec:nth-child(4) {
         padding-block: 5px;
     }
 }
+
+.container_wrap_44dx37 button{
+    cursor: pointer;
+    color: var(--bg-100);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 10px 40px;
+    border: solid 2px var(--pri-color);
+    background-color: var(--pri-color);
+}
