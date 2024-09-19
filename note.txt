@@ -1,0 +1,7 @@
+- Build a sign in form
+- Build a Weather App
+- Job Listings with filtering
+- To-Do List App
+- Build a Calculator
+- Quiz App
+- Build your own portfolio site
