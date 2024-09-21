@@ -41,3 +41,30 @@ body{
         border: solid 2px var(--bg-900);
         background-color: var(--pri-color-500);
 }
+.password_requirements {
+        margin-block: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid var(--bg-100);
+        background-color: var(--bg-300);
+}
+.password_requirements p {
+        font-size: 1rem;
+        font-weight: 400;
+}
+.password_requirements ul {
+        margin: 0;
+        padding-left: 0px;
+}
+.password_requirements li {
+        list-style: none;
+        line-height: 150%;
+        font-size: 0.8rem;
+        font-weight: 300;
+}
+.valid {
+        color: green;
+}
+.invalid {
+        color: red;
+}
