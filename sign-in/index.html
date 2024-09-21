@@ -9,27 +9,84 @@
 </head>
 <body>
         <div class="container_wrap">
-                <form action="">
+                <form 
+                        id="loginForm" 
+                        action="javascript:void(0);"
+                >
                         <div class="form_input">
-                                <label for="email">
+                                <label 
+                                        for="email"
+                                >
                                         Email
                                 </label>
                                 <input 
                                         type="email" 
                                         name="email" 
-                                        id="email"
+                                        id="email" 
+                                        required
+                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                                 >
                         </div>
                         <div class="form_input">
-                                <label for="password">
+                                <label 
+                                        for="password"
+                                >
                                         Password
                                 </label>
                                 <input 
                                         type="password" 
                                         name="password" 
                                         id="password" 
-                                        minlength="8"
+                                        minlength="8" 
+                                        required 
+                                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
                                 >
+                        </div>
+                        <div>
+                                <input 
+                                        type="checkbox" 
+                                        id="togglePassword"
+                                > 
+                                <label 
+                                        for="togglePassword"
+                                >
+                                        Show Password
+                                </label>
+                        </div>
+                        <div id="passwordRequirements" class="password_requirements">
+                                <p>Password must contain:</p>
+                                <ul>
+                                        <li 
+                                                id="length" 
+                                                class="invalid"
+                                        >
+                                                At least 8 characters
+                                        </li>
+                                        <li 
+                                                id="uppercase" 
+                                                class="invalid"
+                                        >
+                                                An uppercase letter
+                                        </li>
+                                        <li 
+                                                id="lowercase" 
+                                                class="invalid"
+                                        >
+                                                A lowercase letter
+                                        </li>
+                                        <li 
+                                                id="number" 
+                                                class="invalid"
+                                        >
+                                                A number
+                                        </li>
+                                        <li 
+                                                id="special" 
+                                                class="invalid"
+                                        >
+                                                A special character (@, $, !, %, *, ?, &)
+                                        </li>
+                                </ul>
                         </div>
                         <div class="form_btn">
                                 <input 
@@ -40,4 +97,5 @@
                 </form>
         </div>
 </body>
+<script src="./script.js"></script>
 </html>
