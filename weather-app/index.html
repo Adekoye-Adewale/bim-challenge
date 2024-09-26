@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../global.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Week 5 | Weather App - Bim Weekly Challenge</title>
+</head>
+<body>
+        <div class="weather_app">
+                <h1>
+                        Weather App
+                </h1>
+                <div class="search_box">
+                        <input 
+                                type="text" 
+                                id="city_input" 
+                                placeholder="Enter city name" 
+                        />
+                        <button 
+                                onclick="getWeather()"
+                        >
+                                Search
+                        </button>
+                </div>
+                <div 
+                        id="weather_result" 
+                        class="weather_result hidden"
+                >
+                        <div>
+                                <h2 id="city_name"></h2>
+                                <p class="last_updated">
+                                        Last updated: <span id="last_updated"></span>
+                                </p>
+                        </div>
+                        <div class="weather_info">
+                                <img 
+                                        id="weather_icon" 
+                                        src="" 
+                                        alt="Weather Icon"
+                                >
+                                <div class="details">
+                                        <div class="weather_info_list">
+                                                <p>
+                                                        Temperature: 
+                                                </p>
+                                                <span id="temperature"></span>°C
+                                        </div>
+                                        <div class="weather_info_list">
+                                                <p>
+                                                        Condition: 
+                                                </p>
+                                                <span id="condition"></span>
+                                        </div>
+                                        <div class="weather_info_list">
+                                                <p>
+                                                        Humidity: 
+                                                </p>
+                                                <span id="humidity"></span>%
+                                        </div>
+                                        <div class="weather_info_list">
+                                                <p>
+                                                        Wind Speed: 
+                                                </p>
+                                                <span id="wind_speed"></span> m/s
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <p 
+                        id="error_message" 
+                        class="error_message hidden"
+                >
+                        City not found. Please try again.
+                </p>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
