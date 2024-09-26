@@ -26,7 +26,27 @@ function getWeather() {
                         document.getElementById('last_updated').innerText = current.observation_time;
                         document.getElementById('weather_icon').src = current.weather_icons[0];
 
-                        console.log(location)
+                        // Dynamically change the background image based on weather description
+                        const weatherDescription = current.weather_descriptions[0].toLowerCase();
+                        const bodyElement = document.body;
+
+                        if (weatherDescription.includes('rain')) {
+                                bodyElement.style.backgroundImage = "url('./img/Patchy-rain-nearby.png')";
+                        } else if (weatherDescription.includes('cloudy')) {
+                                bodyElement.style.backgroundImage = "url('./img/cloudy.png')";
+                        } else if (weatherDescription.includes('sunny')) {
+                                bodyElement.style.backgroundImage = "url('./img/Sunny.png')";
+                        } else if (weatherDescription.includes('clear')) {
+                                bodyElement.style.backgroundImage = "url('./img/Clear.png')";
+                        } else if (weatherDescription.includes('mist')) {
+                                bodyElement.style.backgroundImage = "url('./img/Mist.png')";
+                        } else if (weatherDescription.includes('outcast')) {
+                                bodyElement.style.backgroundImage = "url('./img/Outcast.png')";
+                        } else if (weatherDescription.includes('thunderstorm')) {
+                                bodyElement.style.backgroundImage = "url('./img/Thunderstorm.png')";
+                        } else {
+                                bodyElement.style.backgroundImage = "url('./img/Clear.png')";
+                        }
 
                         weatherResult.classList.remove('hidden');
                         errorMessage.classList.add('hidden');
