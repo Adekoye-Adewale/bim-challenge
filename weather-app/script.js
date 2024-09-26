@@ -10,7 +10,7 @@ function getWeather() {
                 return;
         }
 
-        fetch(`http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`)
+        fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`)
                 .then(response => response.json())
                 .then(data => {
                         if (data.error) {
