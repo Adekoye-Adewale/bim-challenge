@@ -1,14 +1,31 @@
 body{
+        position: relative;
+        height: 100vh;
         padding-inline: 20px;
+        background-image: url(./img/Clear.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        transition: all 350ms ease-in-out;
+}
+.bg_overlay{
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translateY(-200px);
+        height: 200vh;
 }
 .weather_app{
-        background-color: var(--bg-100);
+        background-color: rgba(255, 255, 255, 0.5);
         padding: 40px;
         margin: 4rem auto;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
         max-width: 800px;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
 }
 .search_box{
         margin-bottom: 20px;
@@ -41,7 +58,7 @@ button:hover {
 }
 .last_updated{
         font-size: 0.8rem;
-        color: var(--bg-500);
+        color: var(--bg-800);
 }
 .weather_info {
         margin-top: 20px;
@@ -59,7 +76,7 @@ button:hover {
 }
 .weather_info_list{
         flex: 1 0 165px;
-        border: solid 1px var(--pri-color-400);
+        border: solid 1px #090F33;
         border-radius: 10px;
         padding: 10px 5px;
         overflow: hidden;
@@ -69,7 +86,7 @@ button:hover {
         font-weight: 600;
 }
 .weather_info_list span{
-        color: var(--pri-color);
+        color: #090F33;
         font-size: 1.2rem;
         font-weight: 700;
 }
