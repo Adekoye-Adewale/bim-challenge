@@ -1,0 +1,82 @@
+body{
+        padding-inline: 20px;
+}
+.weather_app{
+        background-color: var(--bg-100);
+        padding: 40px;
+        margin: 4rem auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 800px;
+}
+.search_box{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+}
+input{
+        padding: 10px;
+        width: 70%;
+        border: 1px solid var(--pri-color-200);
+        border-radius: 8px 0px 0px 8px;
+}
+button {
+        padding: 10px 30px;
+        background-color: var(--pri-color-200);
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid var(--pri-color-200);
+        border-radius: 0px 8px 8px 0px;
+        transition: background-color 250ms ease-in-out;
+}
+button:hover {
+        background-color: var(--pri-color-400);
+}
+.weather_result {
+        margin-top: 20px;
+}
+.weather_result h2{
+        text-align: center;
+}
+.last_updated{
+        font-size: 0.8rem;
+        color: var(--bg-500);
+}
+.weather_info {
+        margin-top: 20px;
+}
+.weather_info img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+}
+.details{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+}
+.weather_info_list{
+        flex: 1 0 165px;
+        border: solid 1px var(--pri-color-400);
+        border-radius: 10px;
+        padding: 10px 5px;
+        overflow: hidden;
+}
+.weather_info_list p{
+        font-size: 0.65rem;
+        font-weight: 600;
+}
+.weather_info_list span{
+        color: var(--pri-color);
+        font-size: 1.2rem;
+        font-weight: 700;
+}
+.hidden {
+        display: none;
+}
+.error_message {
+        color: red;
+        margin-top: 15px;
+}
