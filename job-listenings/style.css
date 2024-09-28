@@ -1,0 +1,41 @@
+body {
+        padding: 20px;
+        background-color: #f9f9f9;
+}
+.job_filter {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+}
+input,
+select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        min-width: 200px;
+        width: 100%;
+}
+.job_listings {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+}
+.job_card {
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.job_card h3 {
+        margin-top: 0;
+        color: #333;
+}
+@media (max-width:787px) {
+        .job_filter {
+                flex-direction: column;
+        }
+        .job_filter > div {
+                flex: 1;
+        }
+}
