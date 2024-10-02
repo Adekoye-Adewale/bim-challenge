@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../global.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Week 7 | To-Do List App - Bim Weekly Challenge</title>
+</head>
+<body>
+        <div class="todo_app">
+                <h1>
+                        To-Do List
+                </h1>        
+                <div class="todo_input">
+                        <div>
+                                <label for="todo_title">
+                                        Title
+                                </label>
+                                <input 
+                                        type="text" 
+                                        id="todo_title" 
+                                        placeholder="Enter to-do" 
+                                        required
+                                >
+                        </div>
+                        <div>
+                                <label 
+                                        for="todo_category"
+                                >
+                                        Category:
+                                </label>
+                                <select 
+                                        id="todo_category"
+                                >
+                                        <option value="Task">Task</option>
+                                        <option value="Event">Event</option>
+                                        <option value="Shopping">Shopping</option>
+                                </select>
+                        </div>
+                        <button 
+                                onclick="addTodo()"
+                        >
+                                Add To-Do
+                        </button>
+                </div>
+        
+                <div id="todo_list" class="todo_list"></div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
