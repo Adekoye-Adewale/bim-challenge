@@ -40,7 +40,10 @@ span {
         margin: 0;
 }
 
-body {
+body, 
+input,
+select,
+button {
         font-family: poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: var(--bg);
         padding: 0px;
