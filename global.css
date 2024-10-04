@@ -49,3 +49,19 @@ button {
         padding: 0px;
         margin: 0;
 }
+
+.test_btn{
+        cursor: pointer;
+        color: var(--bg-100);
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 6px;
+        padding: 10px 40px;
+        border: solid 2px var(--pri-color);
+        background-color: var(--pri-color);
+        transition: all 350ms ease-in-out;
+}
+
+.test_btn:hover{
+        background-color: var(--pri-color-100);
+}
