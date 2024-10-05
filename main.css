@@ -1,6 +1,27 @@
 .header_sec{
     background-color: var(--pri-color);
     padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.header_sec_right{
+
+}
+.social_box{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--bg-900);
+    font-weight: 600;
+    transition: all 350ms ease-in-out;
+}
+.social_box:hover{
+    color: var(--pri-color-900);
+}
+.social_box span{
+    font-size: 0.8rem;
 }
 .body_sec{
     padding: 20px;
